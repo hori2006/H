@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>واجهة الزر المركزي</title>
+    <style>
+        /* تصفير الهوامش الأساسية */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* إعدادات الخلفية وتوسيط العناصر */
+        body {
+            background-color: #050505; /* أسود عميق */
+            height: 100vh; /* أخذ ارتفاع الشاشة بالكامل */
+            display: flex;
+            justify-content: center; /* التوسيط الأفقي */
+            align-items: center; /* التوسيط العمودي */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+
+        /* تصميم الزر الأبيض */
+        .center-btn {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 16px 45px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px; /* حواف دائرية عصرية */
+            cursor: pointer;
+            transition: all 0.3s ease; /* نعومة في الحركة */
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05); /* توهج خفيف جداً */
+        }
+
+        /* تأثير عند مرور الماوس (Hover) */
+        .center-btn:hover {
+            transform: translateY(-4px) scale(1.05); /* ارتفاع وتكبير بسيط */
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2); /* زيادة التوهج */
+            background-color: #f4f4f4;
+        }
+
+        /* تأثير عند الضغط على الزر (Active) */
+        .center-btn:active {
+            transform: translateY(2px) scale(0.98); /* نزول للأسفل لمحاكاة الضغط الحقيقي */
+            box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <button class="center-btn">اكتشف المزيد</button>
+
+</body>
+</html>
